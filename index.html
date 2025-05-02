@@ -8,13 +8,13 @@
     body {
       margin: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #f5f5f5; /* Mantener el color claro en toda la página */
-      color: #333;
+      background: linear-gradient(to bottom, #000, #333); /* Degradado negro en toda la página */
+      color: #f5f5f5;
     }
     header {
       display: flex;
       align-items: center;
-      background-color: #fff; /* Fondo blanco en el header */
+      background-color: #222; /* Fondo oscuro para el header */
       padding: 20px 40px;
       box-shadow: 0 2px 8px rgba(0,0,0,0.1);
       justify-content: space-between;
@@ -29,7 +29,7 @@
       margin: 0;
       font-size: 2.5em;
       letter-spacing: 2px;
-      color: #222;
+      color: #f5f5f5;
     }
     .social-icons {
       display: flex;
@@ -44,16 +44,21 @@
       display: inline-block;
       background-color: #fff;
       border-radius: 50%;
-      padding: 10px;
+      padding: 12px;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease;
     }
     .social-icons img {
       width: 40px;
       height: auto;
       transition: transform 0.3s ease, box-shadow 0.3s ease;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); /* Centrado exacto del ícono */
     }
     .social-icons a:hover img {
-      transform: scale(1.1);
+      transform: translate(-50%, -50%) scale(1.1);
       box-shadow: 0px 0px 15px rgba(0,0,0,0.3);
     }
     .social-icons .whatsapp {
@@ -103,18 +108,18 @@
       margin-top: 50px;
       border-bottom: 2px solid #ddd;
       padding-bottom: 10px;
-      color: #111;
+      color: #fff;
     }
     .precios {
       margin-bottom: 25px;
       font-size: 1.2em;
-      color: #444;
+      color: #fff;
       font-weight: bold;
     }
     h3 {
       margin: 30px 0 15px;
       font-size: 1.6em;
-      color: #222;
+      color: #fff;
       border-left: 4px solid goldenrod;
       padding-left: 10px;
     }
@@ -144,12 +149,12 @@
       font-size: 1em;
     }
     footer {
-      background-color: #fff;
+      background-color: #222;
       text-align: center;
       padding: 25px 10px;
       margin-top: 50px;
       font-size: 1.05em;
-      color: #555;
+      color: #f5f5f5;
       border-top: 1px solid #ddd;
     }
     footer img {
@@ -232,7 +237,7 @@
 
   <div class="banner">
     <h2>📦 CATÁLOGO DESTACADO</h2>
-    <p>Descubrí nuestros productos más vendidos y ofertas exclusivas</p>
+    <p>Descubrí nuestros productos más vendidos y más destacados</p>
     <a href="#catalogo" class="boton-catalogo">Ver catálogo</a>
   </div>
 

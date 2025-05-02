@@ -19,6 +19,7 @@
       box-shadow: 0 2px 8px rgba(0,0,0,0.1);
       justify-content: space-between;
       position: relative;
+      flex-wrap: wrap;
     }
     header img {
       height: 120px;
@@ -34,9 +35,9 @@
     .social-icons {
       display: flex;
       gap: 20px;
-      position: absolute;
-      right: 20px;
-      top: 20px;
+      margin-top: 10px;
+      justify-content: center;
+      flex-wrap: wrap;
     }
     .social-icons a {
       text-decoration: none;
@@ -150,8 +151,6 @@
     .footer-line {
       margin: 10px 0;
     }
-
-    /* Responsive adjustments */
     @media (max-width: 768px) {
       header {
         flex-direction: column;
@@ -163,9 +162,8 @@
       h1 {
         font-size: 2em;
       }
-      .social-icons {
-        position: relative;
-        margin-top: 20px;
+      .social-icons img {
+        width: 36px;
       }
       .banner h2 {
         font-size: 2.5em;
@@ -180,12 +178,7 @@
       .galeria img {
         width: 200px;
       }
-      .galeria {
-        justify-content: space-between;
-      }
     }
-    
-    /* Para dispositivos más pequeños */
     @media (max-width: 480px) {
       h1 {
         font-size: 1.5em;
@@ -204,12 +197,9 @@
   </style>
 </head>
 <body>
-
   <header>
     <img src="logo-dorado-sinfondo.png" alt="Logo TLMULTIVENTAS">
-    <div>
-      <h1>TLMULTIVENTAS</h1>
-    </div>
+    <div><h1>TLMULTIVENTAS</h1></div>
     <div class="social-icons">
       <a href="https://wa.me/1150474155" target="_blank">
         <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
@@ -219,107 +209,36 @@
       </a>
     </div>
   </header>
-
   <div class="banner">
     <h2>📦 CATÁLOGO DESTACADO</h2>
     <p>Descubrí nuestros productos más vendidos y ofertas exclusivas</p>
     <a href="#catalogo" class="boton-catalogo">Ver catálogo</a>
   </div>
-
   <section id="catalogo">
-
     <h2>Otros productos</h2>
     <div class="galeria">
-      <div class="producto">
-        <img src="auriculares.jpeg" alt="Auriculares i7 Mini">
-        <p>Auriculares i7 Mini<br>$7000</p>
-      </div>
-      <div class="producto">
-        <img src="mate.jpeg" alt="Mate imperial">
-        <p>Mate imperial<br>$20000</p>
-      </div>
-      <div class="producto">
-        <img src="termos.jpeg" alt="Termo River">
-        <p>Termos River-Boca<br>$30000</p>
-      </div>
-      <div class="producto">
-        <img src="medias.jpeg" alt="Medias antideslizantes">
-        <p>Medias antideslizantes<br>$5500</p>
-      </div>
+      <div class="producto"><img src="auriculares.jpeg"><p>Auriculares i7 Mini<br>$7000</p></div>
+      <div class="producto"><img src="mate.jpeg"><p>Mate imperial<br>$20000</p></div>
+      <div class="producto"><img src="termos.jpeg"><p>Termos River-Boca<br>$30000</p></div>
+      <div class="producto"><img src="medias.jpeg"><p>Medias antideslizantes<br>$5500</p></div>
     </div>
-
     <h2>Camisetas deportivas</h2>
-    <div class="precios">
-      Comunes: $20000 – Retro: $25000
-    </div>
-
+    <div class="precios">Comunes: $20000 – Retro: $25000</div>
     <h3>Argentina</h3>
-    <div class="galeria">
-      <img src="argentina1.jpeg">
-      <img src="argentina2.jpeg">
-      <img src="argentina3.jpeg">
-      <img src="argentina4.jpeg">
-      <img src="argentina5.jpeg">
-      <img src="argentina6.jpeg">
-    </div>
-
+    <div class="galeria"><img src="argentina1.jpeg"><img src="argentina2.jpeg"><img src="argentina3.jpeg"><img src="argentina4.jpeg"><img src="argentina5.jpeg"><img src="argentina6.jpeg"></div>
     <h3>Boca Juniors</h3>
-    <div class="galeria">
-      <img src="bocajuniors1.jpeg">
-      <img src="bocajuniors2.jpeg">
-      <img src="bocajuniors3.jpeg">
-      <img src="bocajuniors4.jpeg">
-      <img src="bocajuniors5.jpeg">
-      <img src="bocajuniors6.jpeg">
-      <img src="bocajuniors7.jpeg">
-      <img src="bocajuniors8.jpeg">
-      <img src="bocajuniors9.jpeg">
-      <img src="bocajuniors10.jpeg">
-      <img src="bocajuniors11.jpeg">
-    </div>
-
+    <div class="galeria"><img src="bocajuniors1.jpeg"><img src="bocajuniors2.jpeg"><img src="bocajuniors3.jpeg"><img src="bocajuniors4.jpeg"><img src="bocajuniors5.jpeg"><img src="bocajuniors6.jpeg"><img src="bocajuniors7.jpeg"><img src="bocajuniors8.jpeg"><img src="bocajuniors9.jpeg"><img src="bocajuniors10.jpeg"><img src="bocajuniors11.jpeg"></div>
     <h3>River Plate</h3>
-    <div class="galeria">
-      <img src="river1.jpeg">
-      <img src="river2.jpeg">
-      <img src="river3.jpeg">
-      <img src="river4.jpeg">
-      <img src="river5.jpeg">
-      <img src="river6.jpeg">
-      <img src="river7.jpeg">
-      <img src="river8.jpeg">
-    </div>
-
+    <div class="galeria"><img src="river1.jpeg"><img src="river2.jpeg"><img src="river3.jpeg"><img src="river4.jpeg"><img src="river5.jpeg"><img src="river6.jpeg"><img src="river7.jpeg"><img src="river8.jpeg"></div>
     <h3>Independiente</h3>
-    <div class="galeria">
-      <img src="independiente1.jpeg">
-      <img src="independiente2.jpeg">
-      <img src="independiente3.jpeg">
-      <img src="independiente4.jpeg">
-    </div>
-
+    <div class="galeria"><img src="independiente1.jpeg"><img src="independiente2.jpeg"><img src="independiente3.jpeg"><img src="independiente4.jpeg"></div>
     <h3>Racing</h3>
-    <div class="galeria">
-      <img src="racing1.jpeg">
-      <img src="racing2.jpeg">
-      <img src="racing3.jpeg">
-      <img src="racing4.jpeg">
-    </div>
-
+    <div class="galeria"><img src="racing1.jpeg"><img src="racing2.jpeg"><img src="racing3.jpeg"><img src="racing4.jpeg"></div>
     <h3>San Lorenzo</h3>
-    <div class="galeria">
-      <img src="sanlorenzo1.jpeg">
-      <img src="sanlorenzo2.jpeg">
-    </div>
-
+    <div class="galeria"><img src="sanlorenzo1.jpeg"><img src="sanlorenzo2.jpeg"></div>
     <h3>Santos 2013</h3>
-    <div class="galeria">
-      <img src="santos1.jpeg">
-      <img src="santos2.jpeg">
-    </div>
-
+    <div class="galeria"><img src="santos1.jpeg"><img src="santos2.jpeg"></div>
   </section>
-
   <footer>
     <div class="footer-line">
       <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
@@ -330,6 +249,5 @@
       <strong>@tlmultiventas</strong>
     </div>
   </footer>
-
 </body>
 </html>

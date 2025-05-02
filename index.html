@@ -14,7 +14,7 @@
     header {
       display: flex;
       align-items: center;
-      background-color: #222; /* Fondo oscuro para el header */
+      background-color: #222;
       padding: 20px 40px;
       box-shadow: 0 2px 8px rgba(0,0,0,0.1);
       justify-content: space-between;
@@ -33,7 +33,7 @@
     }
     .social-icons {
       display: flex;
-      gap: 20px;
+      gap: 25px;
       position: absolute;
       right: 20px;
       top: 20px;
@@ -42,30 +42,30 @@
       text-decoration: none;
       position: relative;
       display: inline-block;
-      background-color: #fff;
+      width: 50px;
+      height: 50px;
       border-radius: 50%;
       padding: 12px;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
       transition: transform 0.3s ease;
-    }
-    .social-icons img {
-      width: 40px;
-      height: auto;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%); /* Centrado exacto del ícono */
-    }
-    .social-icons a:hover img {
-      transform: translate(-50%, -50%) scale(1.1);
-      box-shadow: 0px 0px 15px rgba(0,0,0,0.3);
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
     .social-icons .whatsapp {
       background-color: #25D366;
     }
     .social-icons .instagram {
       background-color: #E1306C;
+    }
+    .social-icons img {
+      width: 30px;
+      height: auto;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .social-icons a:hover img {
+      transform: scale(1.1);
+      box-shadow: 0px 0px 15px rgba(0,0,0,0.3);
     }
     .banner {
       background: linear-gradient(90deg, goldenrod, #fff8dc);
@@ -181,6 +181,7 @@
       .social-icons {
         position: relative;
         margin-top: 20px;
+        gap: 30px;
       }
       .banner h2 {
         font-size: 2.5em;
@@ -206,7 +207,15 @@
         font-size: 1.5em;
       }
       .social-icons img {
-        width: 30px;
+        width: 35px;
+      }
+      .social-icons a {
+        width: 60px;
+        height: 60px;
+        padding: 15px;
+      }
+      .social-icons {
+        gap: 40px;
       }
       .boton-catalogo {
         font-size: 1em;
@@ -237,7 +246,7 @@
 
   <div class="banner">
     <h2>📦 CATÁLOGO DESTACADO</h2>
-    <p>Descubrí nuestros productos más vendidos y más destacados</p>
+    <p>Descubrí nuestros productos más vendidos y ofertas exclusivas</p>
     <a href="#catalogo" class="boton-catalogo">Ver catálogo</a>
   </div>
 

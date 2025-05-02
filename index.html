@@ -8,105 +8,115 @@
     body {
       margin: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #f4f1ec;
+      background-color: #f5f5f5; /* Mantener el color claro en toda la página */
       color: #333;
     }
     header {
       display: flex;
       align-items: center;
+      background-color: #fff; /* Fondo blanco en el header */
+      padding: 20px 40px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
       justify-content: space-between;
-      background-color: #000;
-      padding: 20px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+      position: relative;
     }
     header img {
-      height: 100px;
+      height: 120px;
+      margin-right: 20px;
+      max-width: 100%;
     }
     h1 {
-      font-size: 2.5em;
-      color: goldenrod;
       margin: 0;
+      font-size: 2.5em;
+      letter-spacing: 2px;
+      color: #222;
     }
     .social-icons {
       display: flex;
-      gap: 15px;
+      gap: 20px;
+      position: absolute;
+      right: 20px;
+      top: 20px;
     }
     .social-icons a {
-      width: 45px;
-      height: 45px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      text-decoration: none;
+      position: relative;
+      display: inline-block;
+      background-color: #fff;
       border-radius: 50%;
-      transition: transform 0.3s, box-shadow 0.3s;
+      padding: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     }
-    .social-icons a:hover {
+    .social-icons img {
+      width: 40px;
+      height: auto;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .social-icons a:hover img {
       transform: scale(1.1);
-      box-shadow: 0 0 12px rgba(0,0,0,0.3);
+      box-shadow: 0px 0px 15px rgba(0,0,0,0.3);
     }
     .social-icons .whatsapp {
       background-color: #25D366;
     }
     .social-icons .instagram {
-      background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
-    }
-    .social-icons img {
-      width: 24px;
-      height: 24px;
+      background-color: #E1306C;
     }
     .banner {
-      background: linear-gradient(90deg, goldenrod, #fff4cc);
+      background: linear-gradient(90deg, goldenrod, #fff8dc);
       text-align: center;
-      padding: 50px 20px;
-      border-bottom: 4px solid black;
+      padding: 60px 20px;
+      margin: 0;
+      border-bottom: 2px solid #e0c07c;
     }
     .banner h2 {
-      font-size: 3em;
-      margin: 0 0 10px;
-      color: #222;
+      font-size: 3.5em;
+      margin: 0 0 15px;
+      color: #333;
+      text-shadow: 1px 1px 0 #fff;
     }
     .banner p {
-      font-size: 1.2em;
+      font-size: 1.3em;
+      margin-bottom: 25px;
       color: #444;
     }
     .boton-catalogo {
-      display: inline-block;
-      margin-top: 20px;
-      padding: 12px 24px;
-      background-color: #000;
-      color: goldenrod;
+      padding: 12px 25px;
+      background-color: #333;
+      color: #fff;
+      border-radius: 8px;
       text-decoration: none;
-      border-radius: 6px;
       font-weight: bold;
-      transition: background-color 0.3s, color 0.3s;
+      transition: background-color 0.3s;
     }
     .boton-catalogo:hover {
       background-color: goldenrod;
       color: #000;
     }
     section {
-      max-width: 1200px;
+      max-width: 1300px;
       margin: auto;
       padding: 40px 20px;
     }
     h2 {
-      font-size: 2em;
+      font-size: 2.2em;
+      margin-top: 50px;
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 10px;
       color: #111;
-      border-bottom: 2px solid goldenrod;
-      margin-bottom: 20px;
-    }
-    h3 {
-      margin-top: 40px;
-      font-size: 1.5em;
-      color: #222;
-      border-left: 5px solid goldenrod;
-      padding-left: 10px;
     }
     .precios {
-      margin: 15px 0;
+      margin-bottom: 25px;
       font-size: 1.2em;
       color: #444;
       font-weight: bold;
+    }
+    h3 {
+      margin: 30px 0 15px;
+      font-size: 1.6em;
+      color: #222;
+      border-left: 4px solid goldenrod;
+      padding-left: 10px;
     }
     .galeria {
       display: flex;
@@ -115,51 +125,101 @@
       justify-content: center;
     }
     .galeria img {
-      width: 230px;
+      width: 250px;
+      height: auto;
       border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
-      transition: transform 0.3s;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
     }
     .galeria img:hover {
       transform: scale(1.05);
     }
     .producto {
       text-align: center;
-      max-width: 250px;
+      width: 250px;
     }
     .producto p {
-      margin: 10px 0 0;
+      margin: 8px 0 0;
       font-weight: bold;
+      font-size: 1em;
     }
     footer {
-      background-color: #000;
-      color: #eee;
+      background-color: #fff;
       text-align: center;
-      padding: 30px 15px;
-      border-top: 4px solid goldenrod;
+      padding: 25px 10px;
+      margin-top: 50px;
+      font-size: 1.05em;
+      color: #555;
+      border-top: 1px solid #ddd;
     }
     footer img {
-      width: 20px;
       vertical-align: middle;
-      margin-right: 10px;
+      width: 20px;
+      margin-right: 8px;
     }
     .footer-line {
       margin: 10px 0;
     }
-    @media (max-width: 600px) {
-      h1 { font-size: 1.8em; }
-      .banner h2 { font-size: 2em; }
+
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        text-align: center;
+      }
+      header img {
+        height: 80px;
+      }
+      h1 {
+        font-size: 2em;
+      }
       .social-icons {
-        justify-content: center;
-        margin-top: 15px;
+        position: relative;
+        margin-top: 20px;
+      }
+      .banner h2 {
+        font-size: 2.5em;
+      }
+      .banner p {
+        font-size: 1.1em;
+      }
+      .boton-catalogo {
+        font-size: 1.2em;
+        padding: 10px 20px;
+      }
+      .galeria img {
+        width: 200px;
+      }
+      .galeria {
+        justify-content: space-between;
+      }
+    }
+    
+    /* Para dispositivos más pequeños */
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 1.5em;
+      }
+      .social-icons img {
+        width: 30px;
+      }
+      .boton-catalogo {
+        font-size: 1em;
+        padding: 8px 15px;
+      }
+      .galeria img {
+        width: 150px;
       }
     }
   </style>
 </head>
 <body>
+
   <header>
     <img src="logo-dorado-sinfondo.png" alt="Logo TLMULTIVENTAS">
-    <h1>TLMULTIVENTAS</h1>
+    <div>
+      <h1>TLMULTIVENTAS</h1>
+    </div>
     <div class="social-icons">
       <a href="https://wa.me/1150474155" target="_blank" class="whatsapp">
         <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
@@ -198,18 +258,19 @@
     </div>
 
     <h2>Camisetas deportivas</h2>
-    <div class="precios">Comunes: $20000 – Retro: $25000</div>
+    <div class="precios">
+      Comunes: $20000 – Retro: $25000
+    </div>
 
-    <h3>River Plate</h3>
+    <!-- Camisetas -->
+    <h3>Argentina</h3>
     <div class="galeria">
-      <img src="river1.jpeg">
-      <img src="river2.jpeg">
-      <img src="river3.jpeg">
-      <img src="river4.jpeg">
-      <img src="river5.jpeg">
-      <img src="river6.jpeg">
-      <img src="river7.jpeg">
-      <img src="river8.jpeg">
+      <img src="argentina1.jpeg">
+      <img src="argentina2.jpeg">
+      <img src="argentina3.jpeg">
+      <img src="argentina4.jpeg">
+      <img src="argentina5.jpeg">
+      <img src="argentina6.jpeg">
     </div>
 
     <h3>Boca Juniors</h3>
@@ -225,6 +286,18 @@
       <img src="bocajuniors9.jpeg">
       <img src="bocajuniors10.jpeg">
       <img src="bocajuniors11.jpeg">
+    </div>
+
+    <h3>River Plate</h3>
+    <div class="galeria">
+      <img src="river1.jpeg">
+      <img src="river2.jpeg">
+      <img src="river3.jpeg">
+      <img src="river4.jpeg">
+      <img src="river5.jpeg">
+      <img src="river6.jpeg">
+      <img src="river7.jpeg">
+      <img src="river8.jpeg">
     </div>
 
     <h3>Independiente</h3>
@@ -254,6 +327,7 @@
       <img src="santos1.jpeg">
       <img src="santos2.jpeg">
     </div>
+
   </section>
 
   <footer>
@@ -266,5 +340,6 @@
       <strong>@tlmultiventas</strong>
     </div>
   </footer>
+
 </body>
 </html>
